@@ -1,0 +1,9 @@
+<div class="row">
+    <div ng-repeat="sliderData in vm.slidersData" class="col-3">
+        <div class="mt-3 d-flex">
+            <div> value : {{ sliderData.value }} </div>
+        </div>
+        <slider slider-model="sliderData.value" slider-options="sliderData.options" on-slide-end="vm.slideEnded(data)">
+        </slider>
+    </div>
+</div>

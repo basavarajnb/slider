@@ -93,6 +93,240 @@
             "ha_id": 28
           }
         ]
+      },
+      "SOURCE": {
+        "non_hierarchial_fields": [
+          {
+            "hc_id": 4,
+            "non_hierarchical": true,
+            "name": "SOURCE_OPEN_4",
+            "dataIndex": "HC4_LEVEL4_CD",
+            "leaf": false,
+            "ha_id": 40
+          },
+          {
+            "hc_id": 4,
+            "non_hierarchical": true,
+            "name": "SOURCE_OPEN_3",
+            "dataIndex": "HC4_LEVEL5_CD",
+            "leaf": false,
+            "ha_id": 41
+          },
+          {
+            "hc_id": 4,
+            "non_hierarchical": true,
+            "name": "SOURCE_OPEN_2",
+            "dataIndex": "HC4_LEVEL6_CD",
+            "leaf": false,
+            "ha_id": 42
+          },
+          {
+            "hc_id": 4,
+            "non_hierarchical": true,
+            "name": "SOURCE_OPEN_1",
+            "dataIndex": "HC4_LEVEL7_CD",
+            "leaf": false,
+            "ha_id": 43
+          }
+        ],
+        "order": 4,
+        "display": "Source",
+        "all": {
+          "hc_id": 4,
+          "level": 8,
+          "name": "ALL",
+          "dataIndex": "HC4-ALL_CD",
+          "leaf": false,
+          "ha_id": -1
+        },
+        "fields": [
+          {
+            "hc_id": 4,
+            "level": 1,
+            "non_hierarchical": false,
+            "name": "SITE_REGION",
+            "dataIndex": "HC4_LEVEL1_CD",
+            "leaf": false,
+            "ha_id": 44
+          },
+          {
+            "hc_id": 4,
+            "level": 2,
+            "non_hierarchical": false,
+            "name": "SITE",
+            "dataIndex": "HC4_LEVEL2_CD",
+            "leaf": false,
+            "ha_id": 45
+          },
+          {
+            "hc_id": 4,
+            "level": 3,
+            "non_hierarchical": false,
+            "name": "SOURCE",
+            "dataIndex": "HC4_LEVEL3_CD",
+            "leaf": true,
+            "ha_id": 46
+          }
+        ]
+      },
+      "DC": {
+        "non_hierarchial_fields": [
+          {
+            "hc_id": 3,
+            "non_hierarchical": true,
+            "name": "DISTRIBUTION_OPEN_4",
+            "dataIndex": "HC3_LEVEL3_CD",
+            "leaf": false,
+            "ha_id": 30
+          },
+          {
+            "hc_id": 3,
+            "non_hierarchical": true,
+            "name": "DISTRIBUTION_OPEN_3",
+            "dataIndex": "HC3_LEVEL4_CD",
+            "leaf": false,
+            "ha_id": 31
+          },
+          {
+            "hc_id": 3,
+            "non_hierarchical": true,
+            "name": "DISTRIBUTION_OPEN_2",
+            "dataIndex": "HC3_LEVEL5_CD",
+            "leaf": false,
+            "ha_id": 32
+          },
+          {
+            "hc_id": 3,
+            "non_hierarchical": true,
+            "name": "DISTRIBUTION_OPEN_1",
+            "dataIndex": "HC3_LEVEL6_CD",
+            "leaf": false,
+            "ha_id": 33
+          }
+        ],
+        "order": 3,
+        "display": "DC",
+        "all": {
+          "hc_id": 3,
+          "level": 7,
+          "name": "ALL",
+          "dataIndex": "HC3-ALL_CD",
+          "leaf": false,
+          "ha_id": -1
+        },
+        "fields": [
+          {
+            "hc_id": 3,
+            "level": 1,
+            "non_hierarchical": false,
+            "name": "DC_GEO",
+            "dataIndex": "HC3_LEVEL1_CD",
+            "leaf": false,
+            "ha_id": 34
+          },
+          {
+            "hc_id": 3,
+            "level": 2,
+            "non_hierarchical": false,
+            "name": "DC",
+            "dataIndex": "HC3_LEVEL2_CD",
+            "leaf": true,
+            "ha_id": 35
+          }
+        ]
+      },
+      "PRODUCT": {
+        "non_hierarchial_fields": [
+          {
+            "hc_id": 1,
+            "non_hierarchical": true,
+            "name": "PRODUCT_OPEN_4",
+            "dataIndex": "HC1_LEVEL6_CD",
+            "leaf": false,
+            "ha_id": 10
+          },
+          {
+            "hc_id": 1,
+            "non_hierarchical": true,
+            "name": "PRODUCT_OPEN_3",
+            "dataIndex": "HC1_LEVEL7_CD",
+            "leaf": false,
+            "ha_id": 11
+          },
+          {
+            "hc_id": 1,
+            "non_hierarchical": true,
+            "name": "PRODUCT_OPEN_2",
+            "dataIndex": "HC1_LEVEL8_CD",
+            "leaf": false,
+            "ha_id": 12
+          },
+          {
+            "hc_id": 1,
+            "non_hierarchical": true,
+            "name": "PRODUCT_OPEN_1",
+            "dataIndex": "HC1_LEVEL9_CD",
+            "leaf": false,
+            "ha_id": 13
+          }
+        ],
+        "order": 1,
+        "display": "Product",
+        "all": {
+          "hc_id": 1,
+          "level": 10,
+          "name": "ALL",
+          "dataIndex": "HC1-ALL_CD",
+          "leaf": false,
+          "ha_id": -1
+        },
+        "fields": [
+          {
+            "hc_id": 1,
+            "level": 1,
+            "non_hierarchical": false,
+            "name": "BU",
+            "dataIndex": "HC1_LEVEL1_CD",
+            "leaf": false,
+            "ha_id": 14
+          },
+          {
+            "hc_id": 1,
+            "level": 2,
+            "non_hierarchical": false,
+            "name": "SERIES",
+            "dataIndex": "HC1_LEVEL2_CD",
+            "leaf": false,
+            "ha_id": 15
+          },
+          {
+            "hc_id": 1,
+            "level": 3,
+            "non_hierarchical": false,
+            "name": "FAMILY",
+            "dataIndex": "HC1_LEVEL3_CD",
+            "leaf": false,
+            "ha_id": 16
+          },
+          {
+            "hc_id": 1,
+            "level": 4,
+            "non_hierarchical": false,
+            "name": "SUB_FAMILY",
+            "dataIndex": "HC1_LEVEL4_CD",
+            "leaf": false,
+            "ha_id": 17
+          },
+          {
+            "hc_id": 1,
+            "level": 5,
+            "non_hierarchical": false,
+            "name": "PRODUCT",
+            "dataIndex": "HC1_LEVEL5_CD",
+            "leaf": true,
+            "ha_id": 18
+          }
+        ]
       }
     },
     "metrics": [
