@@ -1,0 +1,226 @@
+{
+  "data": {
+    "hierarchies": {
+      "CUSTOMER": {
+        "non_hierarchial_fields": [
+          {
+            "hc_id": 2,
+            "non_hierarchical": true,
+            "name": "CUSTOMER_OPEN_4",
+            "dataIndex": "HC2_LEVEL6_CD",
+            "leaf": false,
+            "ha_id": 20
+          },
+
+          {
+            "hc_id": 2,
+            "non_hierarchical": true,
+            "name": "CUSTOMER_OPEN_1",
+            "dataIndex": "HC2_LEVEL9_CD",
+            "leaf": false,
+            "ha_id": 23
+          }
+        ],
+        "order": 2,
+        "display": "Customer",
+        "all": {
+          "hc_id": 2,
+          "level": 10,
+          "name": "ALL",
+          "dataIndex": "HC2-ALL_CD",
+          "leaf": false,
+          "ha_id": -1
+        },
+        "fields": [
+          {
+            "hc_id": 2,
+            "level": 1,
+            "non_hierarchical": false,
+            "name": "GEO",
+            "dataIndex": "HC2_LEVEL1_CD",
+            "leaf": false,
+            "ha_id": 24
+          },
+
+          {
+            "hc_id": 2,
+            "level": 5,
+            "non_hierarchical": false,
+            "name": "CUSTOMER",
+            "dataIndex": "HC2_LEVEL5_CD",
+            "leaf": true,
+            "ha_id": 28
+          }
+        ]
+      },
+      "SOURCE": {
+        "non_hierarchial_fields": [
+          {
+            "hc_id": 4,
+            "non_hierarchical": true,
+            "name": "SOURCE_OPEN_4",
+            "dataIndex": "HC4_LEVEL4_CD",
+            "leaf": false,
+            "ha_id": 40
+          },
+
+          {
+            "hc_id": 4,
+            "non_hierarchical": true,
+            "name": "SOURCE_OPEN_1",
+            "dataIndex": "HC4_LEVEL7_CD",
+            "leaf": false,
+            "ha_id": 43
+          }
+        ],
+        "order": 4,
+        "display": "Source",
+        "all": {
+          "hc_id": 4,
+          "level": 8,
+          "name": "ALL",
+          "dataIndex": "HC4-ALL_CD",
+          "leaf": false,
+          "ha_id": -1
+        },
+        "fields": [
+          {
+            "hc_id": 4,
+            "level": 1,
+            "non_hierarchical": false,
+            "name": "SITE_REGION",
+            "dataIndex": "HC4_LEVEL1_CD",
+            "leaf": false,
+            "ha_id": 44
+          },
+
+          {
+            "hc_id": 4,
+            "level": 3,
+            "non_hierarchical": false,
+            "name": "SOURCE",
+            "dataIndex": "HC4_LEVEL3_CD",
+            "leaf": true,
+            "ha_id": 46
+          }
+        ]
+      },
+      "DC": {
+        "non_hierarchial_fields": [
+          {
+            "hc_id": 3,
+            "non_hierarchical": true,
+            "name": "DISTRIBUTION_OPEN_4",
+            "dataIndex": "HC3_LEVEL3_CD",
+            "leaf": false,
+            "ha_id": 30
+          },
+
+          {
+            "hc_id": 3,
+            "non_hierarchical": true,
+            "name": "DISTRIBUTION_OPEN_1",
+            "dataIndex": "HC3_LEVEL6_CD",
+            "leaf": false,
+            "ha_id": 33
+          }
+        ],
+        "order": 3,
+        "display": "DC",
+        "all": {
+          "hc_id": 3,
+          "level": 7,
+          "name": "ALL",
+          "dataIndex": "HC3-ALL_CD",
+          "leaf": false,
+          "ha_id": -1
+        },
+        "fields": [
+          {
+            "hc_id": 3,
+            "level": 1,
+            "non_hierarchical": false,
+            "name": "DC_GEO",
+            "dataIndex": "HC3_LEVEL1_CD",
+            "leaf": false,
+            "ha_id": 34
+          },
+          {
+            "hc_id": 3,
+            "level": 2,
+            "non_hierarchical": false,
+            "name": "DC",
+            "dataIndex": "HC3_LEVEL2_CD",
+            "leaf": true,
+            "ha_id": 35
+          }
+        ]
+      },
+      "PRODUCT": {
+        "non_hierarchial_fields": [
+          {
+            "hc_id": 1,
+            "non_hierarchical": true,
+            "name": "PRODUCT_OPEN_4",
+            "dataIndex": "HC1_LEVEL6_CD",
+            "leaf": false,
+            "ha_id": 10
+          },
+
+          {
+            "hc_id": 1,
+            "non_hierarchical": true,
+            "name": "PRODUCT_OPEN_1",
+            "dataIndex": "HC1_LEVEL9_CD",
+            "leaf": false,
+            "ha_id": 13
+          }
+        ],
+        "order": 1,
+        "display": "Product",
+        "all": {
+          "hc_id": 1,
+          "level": 10,
+          "name": "ALL",
+          "dataIndex": "HC1-ALL_CD",
+          "leaf": false,
+          "ha_id": -1
+        },
+        "fields": [
+          {
+            "hc_id": 1,
+            "level": 1,
+            "non_hierarchical": false,
+            "name": "BU",
+            "dataIndex": "HC1_LEVEL1_CD",
+            "leaf": false,
+            "ha_id": 14
+          },
+
+          {
+            "hc_id": 1,
+            "level": 5,
+            "non_hierarchical": false,
+            "name": "PRODUCT",
+            "dataIndex": "HC1_LEVEL5_CD",
+            "leaf": true,
+            "ha_id": 18
+          }
+        ]
+      }
+    },
+    "metrics": [
+      {
+        "aggregation": "\\n CASE WHEN (SUM(CATALOG_DETAIL_INFO.NUMERIC_16)+SUM(CATALOG_DETAIL_INFO.NUMERIC_17)+SUM(CATALOG_DETAIL_INFO.NUMERIC_18))>0 THEN ABS(((((SUM(CATALOG_DETAIL_INFO.NUMERIC_13)+SUM(CATALOG_DETAIL_INFO.NUMERIC_14)+SUM(CATALOG_DETAIL_INFO.NUMERIC_15)) - (SUM(CATALOG_DETAIL_INFO.NUMERIC_16)+SUM(CATALOG_DETAIL_INFO.NUMERIC_17)+SUM(CATALOG_DETAIL_INFO.NUMERIC_18)))/(SUM(CATALOG_DETAIL_INFO.NUMERIC_16)+SUM(CATALOG_DETAIL_INFO.NUMERIC_17)+SUM(CATALOG_DETAIL_INFO.NUMERIC_18)))*100)) \\n ELSE \\n 0 \\n END",
+        "name": "MAPE : Equals MAPE (Mean Absolute Percent Error) of last 3 months Forecast (Units) divided by Last months Actuals (Units)",
+        "dataIndex": "PERIOD_MAPE"
+      },
+
+      {
+        "aggregation": "\\nCASE WHEN (SUM(CATALOG_DETAIL_INFO.NUMERIC_12)-SUM(CATALOG_DETAIL_INFO.NUMERIC_11) > 0) THEN 1 \\n WHEN \\n(SUM(CATALOG_DETAIL_INFO.NUMERIC_12)-SUM(CATALOG_DETAIL_INFO.NUMERIC_11) = 0) THEN 0  WHEN \\n(SUM(CATALOG_DETAIL_INFO.NUMERIC_12)-SUM(CATALOG_DETAIL_INFO.NUMERIC_11) < 0) THEN -1 \\nEND",
+        "name": "4 months of Consensus Plan against Actuals.",
+        "dataIndex": "BIAS"
+      }
+    ]
+  }
+}

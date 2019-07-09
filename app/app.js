@@ -6,15 +6,31 @@ function TestController() {
   var vm = this;
 
   vm.verticalSlider6 = {
-    value: 6,
+    value: 4,
     options: {
       floor: 0,
-      ceil: 6,
+      ceil: 4,
       vertical: true,
       showSelectionBar: true,
       showTicksValues: true,
       ticksValuesTooltip: function(v) {
         return 'Tooltip for ' + v;
+      },
+      translate: function(value) {
+        switch (value) {
+          case 1:
+            return 'AKSHI.';
+            break;
+          case 2:
+            return 'YOU';
+            break;
+          case 3:
+            return 'LOVE';
+            break;
+          case 4:
+            return 'I';
+            break;
+        }
       }
     }
   };
